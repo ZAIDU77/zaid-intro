@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #020617;
+    padding: 15px 50px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #38bdf8;
+}
+
+.home {
+    background: linear-gradient(to right, #3055ac, #a9b7ce);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 110px 50px;
+}
+
+.home-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.left h1 span {
+    color: #38bdf8;
+    font-size: 40px;
+}
+
+.left h2 {
+    color: orchid;
+    font-size: 32px;
+}
+
+.left p {
+    color: #d8a2a2;
+    font-size: 28px;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.right img {
+    width: 240px;
+    border-radius: 20px;
+}
+
+.about {
+    background: rgb(222, 220, 220);
+    color: black;
+}
+
+.about p {
+    color: #333;
+}
+
+.skills-section {
+    background: #5a6b87;
+}
+
+.contact {
+    background: #8c8f9d;
+}
+
+.section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    
+}
+
+.skill {
+    width: 180px;
+    text-align: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill p {
+    margin-top: 8px;
+}
+
+.progress {
+    background: #334155;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.html { width: 90%; background: #e34c26; }
+.css { width: 80%; background: #264de4; }
+.js { width: 70%; background: #f7df1e; color: black; }
+.py { width: 75%; background: #306998; }
+.sql { width: 80%; background: blue; }
+.c { width: 78%; background: #3055ac; }
+.php { width: 68%; background: #6983e9; }
+.java { width: 75%; background: #da795e; }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        margin: 20px 0 0 0;
+    }
+}
